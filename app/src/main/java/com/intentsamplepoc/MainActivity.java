@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     public void launchSecondActivity(View view) {
         Intent launchIntent = new Intent(this, SecondActivity.class);
         startActivity(launchIntent);
+        overridePendingTransition(R.anim.slide_in_right,R.anim.slide_out_left);
+
     }
     public void goToGoogle(View view) {
         Intent intent=new Intent(Intent.ACTION_VIEW);
